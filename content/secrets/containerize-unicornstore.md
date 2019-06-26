@@ -43,7 +43,8 @@ The file should look like the below once edited and saved with your values.
 Now run the following command:
 
 ```
-docker-compose -f docker-compose.yml -f docker-compose.development.yml up
+cd ~/environment/modernization-unicorn-store
+docker-compose -f docker-compose.development.yml up
 ```
 
 You should be able to navigate to the Unicorn Store by clicking the ***Preview, Preview Running Application*** button on the menu bar in the AWS Cloud9 IDE. However, now the application is running in a local container. The necessary configuration has now been inserted as environment variables when the container was started just like when we go to launch it in Fargate.
